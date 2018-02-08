@@ -1,12 +1,13 @@
-ifeq ($(WITH_OMS),true)
-# ThemeInterfacer
-PRODUCT_PACKAGES += \
-    ThemeInterfacer \
-    projekt.substratum.theme.xml
-endif
-
-# Add overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
+# Enable Google Assistant
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.opa.eligible_device=true
+
+ifeq ($(SIGNED_BUILD),true)
+# Use own keys
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/certs/releasekey
+# Use := instead of += to remove Lineage's keys
+PRODUCT_EXTRA_RECOVERY_KEYS := vendor/certs/releasekey
+endif
+
+# Use own updater
+PRODUCT_PROPERTY_OVERRIDES += lineage.updater.uri=https://lineage.stricted.net/api

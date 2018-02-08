@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="Stricted/android_vendor_extra" path="vendor/extra" remote="github" revision="cm-14.1" />
-  <project name="substratum/interfacer" path="packages/apps/ThemeInterfacer" remote="github" revision="n-rootless" />
+  <project name="Stricted/android_vendor_extra" path="vendor/extra" remote="github" revision="lineage-15.1" />
 </manifest>
