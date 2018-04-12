@@ -1,0 +1,3 @@
+<resources>
+  <integer name="recents_task_bar_dismiss_delay_seconds">0</integer>
+</resources>
