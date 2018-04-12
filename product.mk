@@ -10,4 +10,4 @@ PRODUCT_EXTRA_RECOVERY_KEYS := vendor/certs/releasekey
 endif
 
 # Use own updater
-PRODUCT_PROPERTY_OVERRIDES += lineage.updater.uri=https://lineage.stricted.net/api
+PRODUCT_PROPERTY_OVERRIDES += lineage.updater.uri=https://lineage.stricted.net/api/v1/{device}/{type}/{incr}
