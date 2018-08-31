@@ -9,6 +9,16 @@ PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/certs/releasekey
 PRODUCT_EXTRA_RECOVERY_KEYS := vendor/certs/releasekey
 endif
 
+ifneq ($(filter lineage_pioneer,$(TARGET_PRODUCT)),)
+# opengapps
+GAPPS_VARIANT := nano
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
+
+# mindthegapps
+# $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+
+endif
+
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/extra/overlay
 
