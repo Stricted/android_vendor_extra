@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <project name="opengapps/aosp_build" path="vendor/opengapps/build" revision="master" clone-depth="1" />
-  <!--<project name="opengapps/all" path="vendor/opengapps/sources/all" revision="master" clone-depth="1" />-->
+  <project name="opengapps/all" path="vendor/opengapps/sources/all" revision="master" clone-depth="1" />
 
   <!-- arm64 depends on arm -->
-  <!--<project name="opengapps/arm" path="vendor/opengapps/sources/arm" revision="master" clone-depth="1" />-->
-  <!--<project name="opengapps/arm64" path="vendor/opengapps/sources/arm64" revision="master" clone-depth="1" />-->
-  
-  <!--TEMP-->
-  <project name="SpasilliumNexus/opengapps-all" path="vendor/opengapps/sources/all" revision="android-9.0" clone-depth="1" />
-  <project name="SpasilliumNexus/opengapps-arm" path="vendor/opengapps/sources/arm" revision="android-9.0" clone-depth="1" />
-  <project name="SpasilliumNexus/opengapps-arm64" path="vendor/opengapps/sources/arm64" revision="android-9.0" clone-depth="1" />
+  <project name="opengapps/arm" path="vendor/opengapps/sources/arm" revision="master" clone-depth="1" />
+  <project name="opengapps/arm64" path="vendor/opengapps/sources/arm64" revision="master" clone-depth="1" />
 </manifest>
