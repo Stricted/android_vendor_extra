@@ -10,6 +10,10 @@ PRODUCT_EXTRA_RECOVERY_KEYS := vendor/certs/releasekey
 endif
 
 ifneq ($(filter lineage_pioneer,$(TARGET_PRODUCT)),)
+
+# SU
+PRODUCT_PACKAGES += su
+
 # opengapps
 GAPPS_VARIANT := nano
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
